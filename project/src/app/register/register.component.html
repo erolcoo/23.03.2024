@@ -1,0 +1,46 @@
+<div class="container">
+  <form class="register" #form="ngForm" (ngSubmit)="register(form)">
+    <fieldset>
+      <h2>Registration</h2>
+      <div>
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          ngModel
+          #inputEmail="ngModel"
+          required
+        />
+        <ng-container *ngIf="inputEmail.touched">
+          <p class="error" *ngIf="inputEmail.errors?.['required']">Email is required!</p>
+          <p class="error" *ngIf="inputEmail.errors?.['email']">Invalid email format!</p>
+        </ng-container>
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+          ngModel
+          #inputPassword="ngModel"
+          required
+          minlength="6"
+        />
+        <ng-container *ngIf="inputPassword.touched">
+          <p class="error" *ngIf="inputPassword.errors?.['required']">Password is required!</p>
+          <p class="error" *ngIf="inputPassword.errors?.['minlength']">Password must be at least 6 characters long!</p>
+        </ng-container>
+      </div>
+
+      <button type="submit" [disabled]="form.invalid">Register</button>
+    </fieldset>
+    <div>
+      <a class="nav-link active" aria-current="page" [routerLink]="['/login']">Go to Login</a>
+    </div>
+  </form>
+</div>

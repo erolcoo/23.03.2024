@@ -1,0 +1,75 @@
+[debug] [2024-03-17T12:46:17.621Z] ----------------------------------------------------------------------
+[debug] [2024-03-17T12:46:17.624Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\35987\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-03-17T12:46:17.624Z] CLI Version:   13.5.1
+[debug] [2024-03-17T12:46:17.625Z] Platform:      win32
+[debug] [2024-03-17T12:46:17.625Z] Node Version:  v20.10.0
+[debug] [2024-03-17T12:46:17.625Z] Time:          Sun Mar 17 2024 14:46:17 GMT+0200 (Източноевропейско стандартно време)
+[debug] [2024-03-17T12:46:17.625Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-17T12:46:17.704Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[debug] [2024-03-17T12:46:17.707Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-17T12:46:17.708Z] > authorizing via signed-in user (erolivanov21@gmail.com)
+[debug] [2024-03-17T12:46:17.708Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"rules"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\SoftUni\23.03.2024\project
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-03-17T12:47:04.724Z] Using project from CLI flag: angular-7fca5
+[debug] [2024-03-17T12:47:04.725Z] > refreshing access token with scopes: []
+[debug] [2024-03-17T12:47:04.726Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-17T12:47:04.726Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-17T12:47:05.047Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-17T12:47:05.048Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-17T12:47:05.063Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/angular-7fca5 [none]
+[debug] [2024-03-17T12:47:05.473Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/angular-7fca5 200
+[debug] [2024-03-17T12:47:05.473Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/angular-7fca5 {"projectId":"angular-7fca5","projectNumber":"1001823369117","displayName":"Angular","name":"projects/angular-7fca5","resources":{"hostingSite":"angular-7fca5","realtimeDatabaseInstance":"angular-7fca5-default-rtdb"},"state":"ACTIVE","etag":"1_a8109e86-1d5a-41b9-a9f5-6858a93d4da4"}
+[info] i  Using project angular-7fca5 (Angular) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2024-03-17T12:47:05.481Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/angular-7fca5/services/firebasedatabase.googleapis.com [none]
+[debug] [2024-03-17T12:47:05.481Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/angular-7fca5/services/firebasedatabase.googleapis.com x-goog-quota-user=projects/angular-7fca5
+[debug] [2024-03-17T12:47:06.924Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/angular-7fca5/services/firebasedatabase.googleapis.com 200
+[debug] [2024-03-17T12:47:06.924Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/angular-7fca5/services/firebasedatabase.googleapis.com [omitted]
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2024-03-17T12:47:06.927Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/angular-7fca5/locations/-/instances/angular-7fca5-default-rtdb [none]
+[debug] [2024-03-17T12:47:08.587Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/angular-7fca5/locations/-/instances/angular-7fca5-default-rtdb 200
+[debug] [2024-03-17T12:47:08.587Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/angular-7fca5/locations/-/instances/angular-7fca5-default-rtdb {"name":"projects/1001823369117/locations/europe-west1/instances/angular-7fca5-default-rtdb","project":"projects/1001823369117","databaseUrl":"https://angular-7fca5-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2024-03-17T12:47:08.592Z] >>> [apiv2][query] GET https://angular-7fca5-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [none]
+[debug] [2024-03-17T12:47:08.872Z] <<< [apiv2][status] GET https://angular-7fca5-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-03-17T12:47:08.872Z] <<< [apiv2][body] GET https://angular-7fca5-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json [stream]
+[debug] [2024-03-17T12:47:09.094Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received an instance of Object
+    at validateString (node:internal/validators:162:11)
+    at Object.join (node:path:433:7)
+    at Config.path (C:\Users\35987\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:125:45)
+    at Config.writeProjectFile (C:\Users\35987\AppData\Roaming\npm\node_modules\firebase-tools\lib\config.js:154:32)
+    at writeDBRules (C:\Users\35987\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:34:12)
+    at doSetup (C:\Users\35987\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\database.js:124:13)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async init (C:\Users\35987\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:37:9)
+[error] 
+[error] Error: An unexpected error has occurred.

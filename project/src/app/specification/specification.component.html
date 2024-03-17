@@ -1,0 +1,20 @@
+<div class="container">
+  <div>
+    <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
+  </div>
+  <table *ngIf="specification">
+    <tr>
+      <th>Engine</th>
+      <th>Power</th>
+      <th>Torque</th>
+      <th>Price</th>
+    </tr>
+    <tr *ngFor="let item of specification">
+      <td>{{ item.engine}}</td>
+      <td>{{ item.power}}</td>
+      <td>{{ item.torque}}</td>
+      <td>{{ item.price}}</td>
+    </tr>
+  </table>
+</div>
+

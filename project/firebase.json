@@ -1,0 +1,26 @@
+{
+  "rules": {
+    ".read": true,
+    ".write": true,
+    ".indexOn": ["Sportcars"],
+    ".read": true,
+    ".write": true,
+    ".indexOn": ["Sportcars"],
+    "Sportcars": {
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["Sportcars"],
+      ".read": true,
+      ".write": true,
+      ".indexOn": ["Sportcars"],
+      "$other": {
+        ".validate": false
+      }
+    }
+  },
+  "Sportcars": {
+    ".read": true,
+    ".write": true,
+    ".indexOn": ["Sportcars"]
+  }
+}

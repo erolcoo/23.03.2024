@@ -1,0 +1,11 @@
+<div>
+  <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Home</a>
+</div>
+<div class="container">
+  <div *ngFor="let car of cars" class="box">
+    <img [src]="car.image" alt="" /> <!-- Визуализиране на изображението с URL адреса от обекта car -->
+    <h3>{{car.model}}</h3> <!-- Визуализиране на името на колата -->
+    <a [routerLink]="['/specification']">Specification</a> <!-- Създаване на връзка за спецификации за колата -->
+  </div>
+</div>
+
