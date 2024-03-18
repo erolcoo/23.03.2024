@@ -3,13 +3,11 @@
   margin: 0;
   box-sizing: border-box;
 }
-
 img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 550px;
 }
-
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -27,8 +25,7 @@ img {
 }
 
 .box {
-  width: 650px;
-  height: auto;
+  width: 600px;
   margin-bottom: 30px;
   padding: 10px;
   text-align: center;
