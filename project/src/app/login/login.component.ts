@@ -3,6 +3,7 @@ import { UserService } from '../user.service';
 import { Router } from '@angular/router';
 import { NgForm } from '@angular/forms';
 
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -28,9 +29,15 @@ export class LoginComponent {
       this.router.navigate(['/register']);
       return;
     }
+    if (!this.userService.checkCredentials(email, password)) {
+      // Ако потребителските данни не са валидни, показваме съобщение за грешка
+      this.errorMessage = 'Невалиден имейл или парола.';
+      return;
+    }
 
     // В противен случай, ако потребителят е регистриран, извикваме метода login на userService
     this.userService.login(email, password);
+    console.log(email, password);
     this.router.navigate(['/home']);
   }
 }

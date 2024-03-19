@@ -13,6 +13,7 @@ import { DeleteAccountComponent } from './delete-account/delete-account.componen
 import { RedirectSportsCarComponent } from './redirect-sports-car/redirect-sports-car.component';
 import { RedirectSuvCarComponent } from './redirect-suv-car/redirect-suv-car.component';
 import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybrid-car.component';
+import { UpdateclientComponent } from './updateclient/updateclient.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
@@ -30,6 +31,7 @@ const routes: Routes = [
   { path: 'redirect-sports-car', component: RedirectSportsCarComponent },
   { path: 'redirect-suv-cars', component: RedirectSuvCarComponent },
   { path: 'redirect-hybrid-cars', component: RedirectHybridCarComponent },
+  { path: 'updateclient', component: UpdateclientComponent },
 ];
 @NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] })
 export class AppRoutingModule {}

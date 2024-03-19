@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-
-// Import RxJS operators (if needed)
 import { Observable, throwError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 
@@ -10,7 +8,7 @@ import { catchError, map } from 'rxjs/operators';
 })
 export class AuthService {
 
-  private baseUrl = 'http://your-backend-api-url/auth'; // Replace with your actual API URL
+  private baseUrl = 'http://your-backend-api-url/auth'; // Заменете с реалния адрес на вашия API
 
   constructor(private http: HttpClient) { }
 
@@ -18,19 +16,31 @@ export class AuthService {
     const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     const body = JSON.stringify(credentials);
 
-    return this.http.post<any>(this.baseUrl, body, { headers })
+    return this.http.post<any>(`${this.baseUrl}/login`, body, { headers })
       .pipe(
         map(response => {
-          // Store the token securely (e.g., in local storage or a secure cookie)
-          localStorage.setItem('token', response.token); // Placeholder - replace with secure storage
+          localStorage.setItem('token', response.token); // Съхраняване на токена в локалното съхранение
           return response;
         }),
         catchError(this.handleError)
       );
   }
 
+  isUserPasswordCorrect(credentials: { username: string; password: string }): Observable<boolean> {
+    const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+    const body = JSON.stringify(credentials);
+
+    return this.http.post<any>(`${this.baseUrl}/validate-password`, body, { headers })
+      .pipe(
+        map(response => {
+          return response.isValid;
+        }),
+        catchError(this.handleError)
+      );
+  }
+
   private handleError(error: any): Observable<any> {
-    console.error('An error occurred:', error); // Log the error for debugging
+    console.error('An error occurred:', error);
     return throwError(error.message || 'Server error');
   }
 }

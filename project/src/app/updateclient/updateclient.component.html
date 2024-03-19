@@ -1,0 +1,43 @@
+<div class="container">
+  <form class="update-user" #form="ngForm" (ngSubmit)="updateUser()">
+    <fieldset>
+      <h2>Edit Account</h2>
+      <div>
+        <label for="newEmail">New Email</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="New Email"
+        [(ngModel)]="email"
+        #newEmailInput="ngModel"
+        required
+      />
+        <ng-container *ngIf="newEmailInput.touched">
+          <p class="error" *ngIf="newEmailInput.errors?.['required']">New Email is required!</p>
+          <p class="error" *ngIf="newEmailInput.errors?.['email']">Invalid email format!</p>
+        </ng-container>
+      </div>
+
+      <div>
+        <label for="newPassword">New Password</label>
+        <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="New Password"
+        [(ngModel)]="password"
+        #newPasswordInput="ngModel"
+        required
+        minlength="6"
+      />
+        <ng-container *ngIf="newPasswordInput.touched">
+          <p class="error" *ngIf="newPasswordInput.errors?.['required']">New Password is required!</p>
+          <p class="error" *ngIf="newPasswordInput.errors?.['minlength']">New Password must be at least 6 characters long!</p>
+        </ng-container>
+      </div>
+
+      <button type="submit" [disabled]="form.invalid">Update</button>
+    </fieldset>
+  </form>
+</div>

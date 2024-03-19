@@ -2,7 +2,7 @@
   <form class="login" #form="ngForm" (ngSubmit)="login(form)">
     <fieldset>
       <div>
-        <h2>login</h2>
+        <h2>Login</h2>
         <label for="email">Email</label>
         <input
           type="email"
@@ -14,12 +14,15 @@
           required
         />
         <ng-container *ngIf="inputEmail.touched">
-          <p class="error" *ngIf="inputEmail.errors?.['required']">Email is required!</p>
+          <p class="error" *ngIf="inputEmail.errors?.['required']">
+            Email is required!
+          </p>
         </ng-container>
       </div>
       <div>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
+        <input type="password" id="password" name="password" ngModel required />
+        <!-- Добавяне на ngModel и name за паролата -->
       </div>
       <button type="submit">Login</button>
     </fieldset>

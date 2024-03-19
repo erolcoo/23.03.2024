@@ -23,6 +23,7 @@ import { DeleteAccountComponent } from './delete-account/delete-account.componen
 import { RedirectSportsCarComponent } from './redirect-sports-car/redirect-sports-car.component';
 import { RedirectSuvCarComponent } from './redirect-suv-car/redirect-suv-car.component';
 import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybrid-car.component';
+import { UpdateclientComponent } from './updateclient/updateclient.component';
 
 
 @NgModule({
@@ -43,6 +44,7 @@ import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybri
     RedirectSportsCarComponent,
     RedirectSuvCarComponent,
     RedirectHybridCarComponent,
+    UpdateclientComponent,
   ],
   imports: [BrowserModule, AppRoutingModule,FormsModule,SharedModule,ReactiveFormsModule,HttpClientModule],
   providers: [],
