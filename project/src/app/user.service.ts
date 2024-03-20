@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { UserForAuth } from './types/user';
 
+
 @Injectable({
   providedIn: 'root',
 })
@@ -91,8 +92,5 @@ updateUserInfo(newEmail: string, newPassword: string): boolean {
   }
   return false; // Потребителят не е влязъл в системата
 }
-
-
-
 
 }

@@ -36,7 +36,6 @@
           <p class="error" *ngIf="inputPassword.errors?.['minlength']">Password must be at least 6 characters long!</p>
         </ng-container>
       </div>
-
       <button type="submit" [disabled]="form.invalid">Register</button>
     </fieldset>
     <div>

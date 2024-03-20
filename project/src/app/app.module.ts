@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgModelGroup } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -16,7 +16,6 @@ import { ErrorPageComponent } from './error-page/error-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LogoutComponent } from './logout/logout.component';
-import { MyComponentComponent } from './my-component/my-component.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { SharedModule } from './shared/shared.module';
 import { DeleteAccountComponent } from './delete-account/delete-account.component';
@@ -24,6 +23,7 @@ import { RedirectSportsCarComponent } from './redirect-sports-car/redirect-sport
 import { RedirectSuvCarComponent } from './redirect-suv-car/redirect-suv-car.component';
 import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybrid-car.component';
 import { UpdateclientComponent } from './updateclient/updateclient.component';
+
 
 
 @NgModule({
@@ -38,7 +38,6 @@ import { UpdateclientComponent } from './updateclient/updateclient.component';
     LoginComponent,
     RegisterComponent,
     LogoutComponent,
-    MyComponentComponent,
     WelcomePageComponent,
     DeleteAccountComponent,
     RedirectSportsCarComponent,
@@ -46,7 +45,14 @@ import { UpdateclientComponent } from './updateclient/updateclient.component';
     RedirectHybridCarComponent,
     UpdateclientComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule,FormsModule,SharedModule,ReactiveFormsModule,HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    SharedModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

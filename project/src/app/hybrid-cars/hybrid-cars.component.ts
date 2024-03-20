@@ -1,7 +1,6 @@
-import { Component ,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GetdataService } from '../getdata.service';
-import { Car} from '../types/cars';
-
+import { Car } from '../types/cars';
 
 @Component({
   selector: 'app-hybrid-cars',
@@ -10,17 +9,21 @@ import { Car} from '../types/cars';
 })
 export class HybridCarsComponent implements OnInit {
   cars: Car[] = [];
+  loaderState: string = 'visible'; // Set initial state to 'visible'
+
   constructor(private getDataService: GetdataService) { }
 
-  // Usage in your component
   ngOnInit() {
     this.getDataService.fetchDataHybrid().subscribe(
       cars => {
         this.cars = cars;
-        console.log('Fetched cars:', this.cars); // Проверка в конзолата за успешното извличане на данните
+        this.loaderState = 'hidden'; // Hide the loader when data is fetched
+        console.log('Fetched cars:', this.cars);
       },
-      error => console.error('Error fetching data:', error)
+      error => {
+        console.error('Error fetching data:', error);
+        this.loaderState = 'hidden'; // Hide the loader if there's an error
+      }
     );
   }
-
 }
