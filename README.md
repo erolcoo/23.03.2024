@@ -1,9 +1,23 @@
 Project on Angular !
 This project was generated with Angular CLI version 16.2.12.
 
-Usage and Architecture
+Usage and Architecture 
+
+To start the application, follow these steps:
+
+Clone the repository:  git clone <https://github.com/erolcoo/23.03.2024.git>
+
+Navigate to the project directory:  cd project
+
+Start the development server:  ng serve 
+
+Open your browser and navigate to http://localhost:4200/ to access the application. 
+
+Enjoy exploring the car website!
+
 
 Usage:
+
 This project is designed to serve as a car website, providing users with the ability to explore various cars. Some features are accessible without requiring an account, such as browsing through available cars. However, accessing full information about a car or performing certain actions might necessitate creating an account and logging in.
 
 Features:
