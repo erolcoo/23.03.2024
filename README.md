@@ -22,11 +22,25 @@ This project is designed to serve as a car website, providing users with the abi
 
 Features:
 
-Guest Access: Users can browse through available cars without needing to create an account.
-Account Creation: Full access to detailed information and additional features requires creating an account.
-Account Management: Existing account holders can modify their email and password as needed.
-Backend Integration: Firebase is utilized as the backend for storing and managing data.
-Authentication: User authentication is handled using local storage, ensuring secure access for logged-in users.
+Guest Access: 
+
+Users can browse through available cars without needing to create an account.
+
+Account Creation:
+
+Full access to detailed information and additional features requires creating an account.
+
+Account Management: 
+
+Existing account holders can modify their email and password as needed.
+
+Backend Integration:
+
+Firebase is utilized as the backend for storing and managing data.
+
+Authentication:
+
+User authentication is handled using local storage, ensuring secure access for logged-in users.
 
 Architecture
 
