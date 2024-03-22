@@ -49,7 +49,10 @@ Frontend:
 Angular Framework: 
 
 The frontend of the project is built using Angular, a powerful JavaScript framework for building web applications.
-Component-Based Structure: Angular follows a component-based architecture, where each UI element is encapsulated within its own component, promoting modularity and reusability.
+
+Component-Based Structure:
+
+Angular follows a component-based architecture, where each UI element is encapsulated within its own component, promoting modularity and reusability.
 
 Services:
 
