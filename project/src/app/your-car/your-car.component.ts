@@ -26,7 +26,6 @@ export class YourCarComponent implements OnInit {
     this.getDataService.deleteData(itemId)
       .subscribe(response => {
         console.log('DELETE successful:', response);
-        // Изтриването е успешно, може да презаредите данните или други необходими действия
         this.router.navigate(['/home']);
       }, error => {
         console.error('DELETE error:', error);

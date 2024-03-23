@@ -16,21 +16,20 @@ export class SellCarComponent {
     if (form.valid) {
       const data = {
         model: form.value.carName,
-        image: form.value.carImage
+        image: form.value.carImage,
+        price: form.value.carPrice
       };
 
       this.getDataService.postData(data)
         .subscribe(response => {
           console.log('POST successful:', response);
           console.log(data);
-
-          // Добавете код за обработка на успешно изпратените данни тук
           this.router.navigate(['/your-car']);
         }, error => {
           console.error('POST error:', error);
         });
     } else {
-      console.error('Формата не е валидна.');
+      console.error('Invalid input');
     }
   }
 }

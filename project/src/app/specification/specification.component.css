@@ -17,11 +17,16 @@ table {
   width: 700px;
   height: 300px;
   margin-top: 150px;
-  background-color:rgba(40, 186, 235, 0.556);
-  border: 3px solid grey;
+  background-color: black;
+  border: 5px solid darkslategray;
   border-radius: 25px;
-  color:black;
+  color: lightskyblue;
   font-style: italic;
+  font-weight: bold;
+}
+table :hover{
+  background-color: lightskyblue;
+  color: darkslategray;
 }
 .nav-link {
     position: fixed;
