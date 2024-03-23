@@ -10,10 +10,9 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { DeleteAccountComponent } from './delete-account/delete-account.component';
-import { RedirectSportsCarComponent } from './redirect-sports-car/redirect-sports-car.component';
-import { RedirectSuvCarComponent } from './redirect-suv-car/redirect-suv-car.component';
-import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybrid-car.component';
 import { UpdateclientComponent } from './updateclient/updateclient.component';
+import { SellCarComponent } from './sell-car/sell-car.component';
+import { YourCarComponent } from './your-car/your-car.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
@@ -28,10 +27,9 @@ const routes: Routes = [
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: WelcomePageComponent },
   { path: 'delete-account', component: DeleteAccountComponent },
-  { path: 'redirect-sports-car', component: RedirectSportsCarComponent },
-  { path: 'redirect-suv-cars', component: RedirectSuvCarComponent },
-  { path: 'redirect-hybrid-cars', component: RedirectHybridCarComponent },
   { path: 'updateclient', component: UpdateclientComponent },
+  {path: 'sell-car' , component: SellCarComponent },
+  {path: 'your-car', component: YourCarComponent}
 ];
 @NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] })
 export class AppRoutingModule {}

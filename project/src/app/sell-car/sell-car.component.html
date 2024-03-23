@@ -1,0 +1,19 @@
+<div>
+  <h1>Sell your car</h1>
+    <form #sellCarForm="ngForm" (ngSubmit)="onSubmit(sellCarForm)">
+      <fieldset>
+      <div>
+        <label for="carName">Model</label>
+        <input type="text" id="carName" name="carName" ngModel required />
+      </div>
+      <div>
+        <label for="carImage">Image</label>
+        <input type="text" id="carImage" name="carImage" ngModel required />
+      </div>
+      <button type="submit">Sell</button>
+    </fieldset>
+      <div>
+        <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Back to Home</a>
+      </div>
+    </form>
+</div>

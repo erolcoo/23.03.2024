@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Car} from "./types/cars";
 import { Specification } from './types/specification';
+import { SellCars } from './types/sellcars';
 
 @Injectable({
   providedIn: 'root'
@@ -32,6 +33,17 @@ export class GetdataService {
     return this.http.get<Specification[]>(url);
   }
 
-
+  postData(data: SellCars): Observable<any> {
+    const url = `https://angular-7fca5-default-rtdb.europe-west1.firebasedatabase.app/-Nte3Y7mHiRFQa8b78tv/cars.json`;
+    return this.http.post<any>(url, data);
+  }
+  getData(): Observable<Car[]> {
+    const url = 'https://angular-7fca5-default-rtdb.europe-west1.firebasedatabase.app/-Nte3Y7mHiRFQa8b78tv/cars.json';
+    return this.http.get<Car[]>(url);
+  }
+  deleteData(itemId: string): Observable<any> {
+    const url = `https://angular-7fca5-default-rtdb.europe-west1.firebasedatabase.app/-Nte3Y7mHiRFQa8b78tv/cars/.json`;
+    return this.http.delete(url);
+  }
 }
 

@@ -10,9 +10,6 @@ export class DeleteAccountComponent {
   constructor(private userService: UserService) {}
 
   onDeleteAccount() {
-    // Извикайте метода за изтриване на акаунта от UserService
     this.userService.deleteAccount();
-    console.log('User account deleted successfully.');
-    // Тук можете да направите каквото смятате за необходимо, например да пренасочите потребителя към друга страница или да изведете съобщение за успешно изтриване на акаунта.
   }
 }

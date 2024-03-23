@@ -19,10 +19,9 @@ import { LogoutComponent } from './logout/logout.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { SharedModule } from './shared/shared.module';
 import { DeleteAccountComponent } from './delete-account/delete-account.component';
-import { RedirectSportsCarComponent } from './redirect-sports-car/redirect-sports-car.component';
-import { RedirectSuvCarComponent } from './redirect-suv-car/redirect-suv-car.component';
-import { RedirectHybridCarComponent } from './redirect-hybrid-car/redirect-hybrid-car.component';
 import { UpdateclientComponent } from './updateclient/updateclient.component';
+import { SellCarComponent } from './sell-car/sell-car.component';
+import { YourCarComponent } from './your-car/your-car.component';
 
 
 
@@ -40,10 +39,9 @@ import { UpdateclientComponent } from './updateclient/updateclient.component';
     LogoutComponent,
     WelcomePageComponent,
     DeleteAccountComponent,
-    RedirectSportsCarComponent,
-    RedirectSuvCarComponent,
-    RedirectHybridCarComponent,
     UpdateclientComponent,
+    SellCarComponent,
+    YourCarComponent,
   ],
   imports: [
     BrowserModule,

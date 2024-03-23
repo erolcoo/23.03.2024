@@ -43,6 +43,7 @@ button:hover {
   background-color: darkslategray;
   color: black;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 div a {
   font-family: "Times New Roman", Times, serif;

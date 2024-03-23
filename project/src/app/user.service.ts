@@ -63,9 +63,7 @@ isUserRegistered(email: string): boolean {
   return false;
 }
 deleteAccount() {
-  // Изтриване на потребителя от Local Storage
   localStorage.removeItem(this.USER_KEY);
-  // Също така изтрийте и свойството user в услугата
   this.user = undefined;
 }
 checkCredentials(email: string, password: string): boolean {

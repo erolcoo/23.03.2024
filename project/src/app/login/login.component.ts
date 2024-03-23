@@ -26,12 +26,12 @@ export class LoginComponent {
     if (!this.userService.isUserRegistered(email)) {
       // Ако потребителят не е регистриран, задаваме флага на false
       this.isUserRegistered = false;
-      this.router.navigate(['/register']);
+      this.router.navigate(['/error']);
       return;
     }
     if (!this.userService.checkCredentials(email, password)) {
       // Ако потребителските данни не са валидни, показваме съобщение за грешка
-      this.errorMessage = 'Невалиден имейл или парола.';
+      this.errorMessage = 'Invalid password or email address';
       return;
     }
 
