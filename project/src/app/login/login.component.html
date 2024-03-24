@@ -21,8 +21,12 @@
       </div>
       <div>
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" ngModel required />
-        <!-- Добавяне на ngModel и name за паролата -->
+        <input type="password" id="password" name="password" ngModel required #inputPassword="ngModel" />
+        <ng-container *ngIf="inputPassword.touched">
+          <p class="error" *ngIf="inputPassword.errors?.['required']">
+            Password is required!
+          </p>
+        </ng-container>
       </div>
       <button type="submit">Login</button>
     </fieldset>

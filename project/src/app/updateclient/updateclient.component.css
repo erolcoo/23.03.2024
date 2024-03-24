@@ -1,17 +1,23 @@
-form {
-  margin: 2em auto 0;
+h2{
+  font-size: 45px;
+}
+.update-user {
   width: 300px;
   margin-left: 50px;
+  margin-top: 100px;
   padding: 20px;
-  border: 3px solid #090000;
-  border-radius: 5px;
+  border: 5px solid #090000;
+  border-radius: 25px;
   background-color: lightskyblue;
-  color: white;
+  color: darkslategray;
   text-align: center;
   font-style: italic;
+  font-weight: bold;
   font-size: 24px;
 }
-
+fieldset{
+  border: none;
+}
 div {
   margin-bottom: 15px;
 }
@@ -20,45 +26,54 @@ label {
   display: block;
   margin-bottom: 5px;
 }
-
-input[type="text"],
-input[type="password"] {
-  width: calc(100% - 12px);
+input[type="email"],
+input[type="password"]{
+  width: calc(80% - 12px);
   padding: 6px;
-  border: 1px solid #ccc;
-  border-radius: 3px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(239, 230, 230);
 }
-
 button {
-  width: 100%;
+  width: 80%;
   padding: 8px;
-  background-color: lightskyblue;
-  border: none;
-  border-radius: 3px;
-  color: #fff;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: blue;
+  color: white;
   cursor: pointer;
 }
-
 button:hover {
   background-color: darkslategray;
   color: black;
+  font-size: 25px;
+  font-weight: bold;
   cursor: pointer;
+  margin-bottom: 20px;
 }
-div a {
+.nav-link {
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  transform: translate(-575%, -75%);
+}
+
+.nav-link {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-size: bold;
   font-size: 16px;
-  color: black;
+  width: 100px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
   text-decoration: none;
-  border: 1px solid black;
+  color: black;
+  border: 2px solid black;
   padding: 10px;
-  margin-right: 10px;
   border-radius: 20px;
   background-color: lightskyblue;
 }
-
-
 div a:hover {
   background-color: darkslategray;
   color: black;

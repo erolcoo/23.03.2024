@@ -13,6 +13,7 @@ import { DeleteAccountComponent } from './delete-account/delete-account.componen
 import { UpdateclientComponent } from './updateclient/updateclient.component';
 import { SellCarComponent } from './sell-car/sell-car.component';
 import { YourCarComponent } from './your-car/your-car.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
@@ -25,7 +26,7 @@ const routes: Routes = [
   { path: 'error', component: ErrorPageComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'logout', component: WelcomePageComponent },
+  { path: 'logout', component: LogoutComponent },
   { path: 'delete-account', component: DeleteAccountComponent },
   { path: 'updateclient', component: UpdateclientComponent },
   {path: 'sell-car' , component: SellCarComponent },

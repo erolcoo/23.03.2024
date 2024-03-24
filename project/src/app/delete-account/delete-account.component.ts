@@ -10,6 +10,9 @@ export class DeleteAccountComponent {
   constructor(private userService: UserService) {}
 
   onDeleteAccount() {
-    this.userService.deleteAccount();
+    const confirmed = window.confirm('Are you sure you want to delete');
+    if (confirmed) {
+      this.userService.deleteAccount();
+    }
   }
 }

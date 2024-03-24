@@ -1,5 +1,8 @@
 <div>
   <h1>Sell your car</h1>
+  <div>
+    <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Go back</a>
+  </div>
     <form #sellCarForm="ngForm" (ngSubmit)="onSubmit(sellCarForm)">
       <fieldset>
       <div>
@@ -16,8 +19,5 @@
       </div>
       <button type="submit">Sell</button>
     </fieldset>
-      <div>
-        <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Go back</a>
-      </div>
     </form>
 </div>

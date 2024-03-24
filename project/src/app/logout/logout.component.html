@@ -1,1 +1,9 @@
-<p>logout works!</p>
+<h1>Are you sure you want to logout?</h1>
+<div class="container">
+<div>
+ <div class="bord">
+  <button (click)="onLogout()">Yes</button>
+  <button [routerLink]="['/home']">No</button>
+</div>
+</div>
+</div>

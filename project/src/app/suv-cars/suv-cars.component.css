@@ -13,7 +13,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
-  background-color: darkgray;
+  background-image: url('https://media.istockphoto.com/id/1158232690/photo/aerial-view-of-the-parked-new-cars-at-the-automotive-plant.jpg?s=2048x2048&w=is&k=20&c=7xut7UdLuSCyJzd3HSTbWw7FsVrAtp42wWvPFg0o0Gs=');
 }
 
 .container div {
@@ -23,7 +23,10 @@ img {
   padding: auto;
   border-radius: 10px;
 }
-
+.container div:hover {
+  background-color: darkslategray;
+  color: black;
+}
 .box {
   width: 600px;
   margin-bottom: 30px;
@@ -64,14 +67,14 @@ a {
   text-align: center;
   text-decoration: none;
   color: black;
-  border: 1px solid black;
+  border: 3px solid black;
   padding: 10px;
   border-radius: 20px;
   background-color: lightskyblue;
 }
 
 div a:hover {
-  background-color: darkslategray;
-  color: black;
+  background-color: black;
+  color: white;
   cursor: pointer;
 }
