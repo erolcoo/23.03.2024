@@ -22,6 +22,7 @@ import { DeleteAccountComponent } from './delete-account/delete-account.componen
 import { UpdateclientComponent } from './updateclient/updateclient.component';
 import { SellCarComponent } from './sell-car/sell-car.component';
 import { YourCarComponent } from './your-car/your-car.component';
+import { DeleteWindowConfirmComponent } from './delete-window-confirm/delete-window-confirm.component';
 
 
 
@@ -42,6 +43,7 @@ import { YourCarComponent } from './your-car/your-car.component';
     UpdateclientComponent,
     SellCarComponent,
     YourCarComponent,
+    DeleteWindowConfirmComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,6 +14,7 @@ import { UpdateclientComponent } from './updateclient/updateclient.component';
 import { SellCarComponent } from './sell-car/sell-car.component';
 import { YourCarComponent } from './your-car/your-car.component';
 import { LogoutComponent } from './logout/logout.component';
+import { DeleteWindowConfirmComponent } from './delete-window-confirm/delete-window-confirm.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/welcome-page' },
@@ -27,10 +28,12 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: LogoutComponent },
-  { path: 'delete-account', component: DeleteAccountComponent },
+  { path: 'delete-account', component: DeleteWindowConfirmComponent },
   { path: 'updateclient', component: UpdateclientComponent },
   {path: 'sell-car' , component: SellCarComponent },
-  {path: 'your-car', component: YourCarComponent}
+  {path: 'your-car', component: YourCarComponent},
+  {path:'delete-window-confirm', component: DeleteAccountComponent}
+
 ];
 @NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] })
 export class AppRoutingModule {}
