@@ -49,3 +49,19 @@ nav a:hover {
   cursor: pointer;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  gap:2em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: darkslategrey;
+  padding: 10px 0;
+}
