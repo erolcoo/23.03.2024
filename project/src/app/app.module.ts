@@ -8,23 +8,23 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { SportCarsComponent } from './sport-cars/sport-cars.component';
-import { SuvCarsComponent } from './suv-cars/suv-cars.component';
-import { HybridCarsComponent } from './hybrid-cars/hybrid-cars.component';
-import { SpecificationComponent } from './specification/specification.component';
+import { SportCarsComponent } from './cars-module/sport-cars/sport-cars.component';
+import { SuvCarsComponent } from './cars-module/suv-cars/suv-cars.component';
+import { HybridCarsComponent } from './cars-module/hybrid-cars/hybrid-cars.component';
+import { SpecificationComponent } from './cars-module/specification/specification.component';
 import { ErrorPageComponent } from './error-page/error-page.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
-import { LogoutComponent } from './logout/logout.component';
+import { LoginComponent } from './user-module/login/login.component';
+import { RegisterComponent } from './user-module/register/register.component';
+import { LogoutComponent } from './user-module/logout/logout.component';
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { SharedModule } from './shared/shared.module';
-import { DeleteAccountComponent } from './delete-account/delete-account.component';
-import { UpdateclientComponent } from './updateclient/updateclient.component';
-import { SellCarComponent } from './sell-car/sell-car.component';
+import { DeleteAccountComponent } from './user-module/delete-account/delete-account.component';
+import { UpdateclientComponent } from './user-module/updateclient/updateclient.component';
+import { SellCarComponent } from './cars-module/sell-car/sell-car.component';
 import { YourCarComponent } from './your-car/your-car.component';
-import { DeleteWindowConfirmComponent } from './delete-window-confirm/delete-window-confirm.component';
-
-
+import { DeleteWindowConfirmComponent } from './user-module/delete-window-confirm/delete-window-confirm.component';
+import { UserModuleModule } from './user-module/user-module.module';
+import { CarsModuleModule } from './cars-module/cars-module.module';
 
 @NgModule({
   declarations: [
@@ -52,6 +52,8 @@ import { DeleteWindowConfirmComponent } from './delete-window-confirm/delete-win
     SharedModule,
     ReactiveFormsModule,
     HttpClientModule,
+    UserModuleModule,
+    CarsModuleModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

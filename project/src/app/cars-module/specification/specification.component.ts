@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GetdataService } from '../getdata.service';
-import { Specification } from '../types/specification';
+import { GetdataService } from '../../getdata.service';
+import { Specification } from '../../types/specification';
 
 @Component({
   selector: 'app-specification',

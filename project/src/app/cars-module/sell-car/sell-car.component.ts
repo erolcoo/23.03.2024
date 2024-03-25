@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { GetdataService } from '../getdata.service';
+import { GetdataService } from '../../getdata.service';
 
 
 @Component({

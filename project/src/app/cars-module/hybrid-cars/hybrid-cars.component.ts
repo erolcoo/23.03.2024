@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { GetdataService } from '../getdata.service';
-import { Car } from '../types/cars';
+import { GetdataService } from '../../getdata.service';
+import { Car } from '../../types/cars';
 
 @Component({
   selector: 'app-hybrid-cars',

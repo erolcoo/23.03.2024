@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { UserService } from '../user.service';
+import { UserService } from '../../user.service';
 import { Router } from '@angular/router';
-import { UserForAuth } from '../types/user';
+import { UserForAuth } from '../../types/user';
 
 @Component({
   selector: 'app-updateclient',
