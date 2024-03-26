@@ -12,7 +12,7 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { DeleteAccountComponent } from './user-module/delete-account/delete-account.component';
 import { UpdateclientComponent } from './user-module/updateclient/updateclient.component';
 import { SellCarComponent } from './cars-module/sell-car/sell-car.component';
-import { YourCarComponent } from './your-car/your-car.component';
+import { YourCarComponent } from './cars-module/your-car/your-car.component';
 import { LogoutComponent } from './user-module/logout/logout.component';
 import { DeleteWindowConfirmComponent } from './user-module/delete-window-confirm/delete-window-confirm.component';
 

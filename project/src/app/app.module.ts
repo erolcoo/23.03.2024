@@ -21,7 +21,7 @@ import { SharedModule } from './shared/shared.module';
 import { DeleteAccountComponent } from './user-module/delete-account/delete-account.component';
 import { UpdateclientComponent } from './user-module/updateclient/updateclient.component';
 import { SellCarComponent } from './cars-module/sell-car/sell-car.component';
-import { YourCarComponent } from './your-car/your-car.component';
+import { YourCarComponent } from './cars-module/your-car/your-car.component';
 import { DeleteWindowConfirmComponent } from './user-module/delete-window-confirm/delete-window-confirm.component';
 import { UserModuleModule } from './user-module/user-module.module';
 import { CarsModuleModule } from './cars-module/cars-module.module';

@@ -1,0 +1,13 @@
+<div class="garage">
+  <div>
+    <a class="nav-link active" aria-current="page" [routerLink]="['/home']">Back</a>
+  </div>
+  <div class="container">
+    <div *ngFor="let car of cars" class="box">
+      <img [src]="car.image" alt="" />
+      <h2>{{ car.model }}</h2>
+      <h3>{{ car.price }}</h3>
+      <a (click)="deleteCar(car.id)">Delete</a>
+    </div>
+  </div>
+</div>

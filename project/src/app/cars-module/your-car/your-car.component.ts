@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { GetdataService } from '../getdata.service';
-import { Car } from '../types/cars';
+import { GetdataService } from '../../getdata.service';
+import { Car } from '../../types/cars';
 
 @Component({
   selector: 'app-your-car',
