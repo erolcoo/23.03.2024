@@ -28,12 +28,11 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'logout', component: LogoutComponent },
-  { path: 'delete-account', component: DeleteWindowConfirmComponent },
+  { path: 'delete-account', component: DeleteAccountComponent },
   { path: 'updateclient', component: UpdateclientComponent },
-  {path: 'sell-car' , component: SellCarComponent },
-  {path: 'your-car', component: YourCarComponent},
-  {path:'delete-window-confirm', component: DeleteAccountComponent}
-
+  { path: 'sell-car', component: SellCarComponent },
+  { path: 'your-car', component: YourCarComponent },
+  { path: 'delete-account-confirm', component: DeleteWindowConfirmComponent },
 ];
 @NgModule({ imports: [RouterModule.forRoot(routes)], exports: [RouterModule] })
 export class AppRoutingModule {}

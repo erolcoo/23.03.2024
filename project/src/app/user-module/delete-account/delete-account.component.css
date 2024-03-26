@@ -8,12 +8,6 @@ body {
   padding: 0;
   margin: 0;
 }
-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
 h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 90px;
@@ -23,11 +17,7 @@ h1 {
   color: lightskyblue;
   margin-bottom: 30px;
 }
-p {
-  font-size: 22px;
-  color: black;
-  margin: 10px 0;
-}
+
 nav a {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
@@ -46,4 +36,20 @@ nav a:hover {
   background-color: darkslategray;
   color: black;
   cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  gap:2em;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 25px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: darkslategrey;
+  padding: 10px 0;
 }
